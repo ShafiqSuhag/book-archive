@@ -13,55 +13,37 @@
 
     <!-- main  -->
     <div class="container">
+        
         <!-- search  -->
-        <div class="row w-50 mx-auto mt-5">
-            <div class="input-group">
-                <input type="text" name="" id="search-input" class="form-control">
-                <button class="btn btn-info" id="btn-search">SEARCH</button>
-            </div>   
+        <div class="row w-md-50 mx-auto mt-5">
+            <div class="col-1">
+                <div id="search-spinner" class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="input-group">
+                    <input type="text" name="" id="search-input" class="form-control">
+                    <button class="btn btn-info" id="btn-search">SEARCH</button>
+                </div>       
+            </div>
+            
         </div>
         <!-- search ./ -->
 
+        <!-- search label  -->
+        <div class="search-result-label row h5 py-2 mt-3">
+            <div class="col-6">Books <span id="result-count"></span></div>
+            <div class="col-6 text-right"></div>
+        </div>
+        <hr>
+        <!-- search label ./ -->
+
         <!-- search result  -->
         <div class="row  mt-5" id="search-result-container">
-            <!-- <div class=" row gap-1">
-                
-                <div class="p-2 bg-light border col">Grid item 1</div>
-                <div class="p-2 bg-light border col">Grid item 2</div>
-                <div class="p-2 bg-light border col">Grid item 3</div>
-              </div> -->
-
-              <!-- <div class="col-4  p-3 ">
-                <div class="row bg-info shadow-lg rounded">
-                    <div class="col-md-6 p-2">
-                        <img class="rounded" src="https://covers.openlibrary.org/w/id/8223160-M.jpg" alt="">
-                    </div>
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
-                        <p> <b>Book Name :</b>  Javascript in Easy Steps (In Easy Steps) </p>
-                        <ul>
-                            <li> <b>Author :</b>  Gary B. </li>
-                            <li> <b>Publisher :</b>  Course Technology</li>
-                            <li> <b>First Published :</b>  2000</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
-
-            
-          
-            
-            
-            
-            
-            
-            
-           
         </div>
         <!-- search result ./ -->
     </div>
-
-    // 
-  
 
 
 
