@@ -9,23 +9,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-    <!-- header -->
+    
 
-    <!-- main  -->
-    <div class="container">
-        
-        <!-- search  -->
-        <div class="row w-md-50 mx-auto mt-5">
-            <div class="col-1">
+    
+    <main class="container">
+        <!-- header -->
+      
+        <div class="row mt-5">
+            <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">  <h1 class="fs-1">BOOK ARCHIVE</h1></div>
+            <div class="col-md-1 ">
                 <div id="search-spinner" class="spinner-border" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
-            <div class="col-11">
+            <div class="col-md-5">
                 <div class="input-group">
                     <input type="text" name="" id="search-input" class="form-control">
                     <button class="btn btn-info" id="btn-search">SEARCH</button>
-                </div>       
+                </div> 
+                <p class="mt-2 text-muted"><b> </b>Search History  : <span id="search-history"></span> </p>
+            </div>
+        </div>
+        <!-- search  -->
+        <div class="row w-md-50 mx-auto mt-5">
+           
+            <div class="col-11">
+                      
             </div>
             
         </div>
@@ -39,11 +48,17 @@
         <hr>
         <!-- search label ./ -->
 
+        <!-- no book found alert  -->
+        <div id="alert" class="row mt-5 text-center text-uppercase ">
+            <h3>No books found.</h3>
+        </div>
+        <!-- no book found alert ./ -->
+
         <!-- search result  -->
-        <div class="row  mt-5" id="search-result-container">
+        <div class="row  mt-5 " id="search-result-container">
         </div>
         <!-- search result ./ -->
-    </div>
+    </main>
 
 
 
@@ -51,6 +66,8 @@
 
 
     <!-- footer  -->
+    <p class="text-center my-4">Developed by <i>Shafiq Suhag</i> </p>
+    <!-- footer  ./-->
 
     <!-- js  -->
     <script src="script.js"></script>

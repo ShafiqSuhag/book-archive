@@ -1,5 +1,7 @@
 <!-- Module 36
 
+handle 500 error 
+
 Classroom links : https://classroom.github.com/a/mOiiFMDY
 Netlifly deploy link : 
 My Code LInk : https://github.com/Programming-Hero-Web-Course4/book-archive-ShafiqSuhag
